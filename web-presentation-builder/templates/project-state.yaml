@@ -1,0 +1,43 @@
+skill: web-presentation-builder
+skill_version: 1.0.0
+project:
+  name: ""
+  type: leadership
+  repository: ""
+  target_viewport:
+    width: 1920
+    height: 1080
+  current_version: V0.1
+  stable_version: ""
+mode: new
+stage:
+  current: UNDERSTAND
+  completed: []
+  pending:
+    - CONTENT_ARCH
+    - VISUAL_BASELINE
+    - KEY_SCREENS
+    - FULL_BUILD
+    - QA
+    - STANDALONE
+    - RELEASE
+baseline:
+  content_confirmed: false
+  visual_confirmed: false
+  key_screens_confirmed: false
+  locked_screens: []
+  current_screen_count: 0
+assets:
+  source_images_validated: false
+  required_assets: []
+qa:
+  last_contact_sheet: ""
+  critical_issues: []
+  warnings: []
+release:
+  modular_path: ""
+  standalone_path: ""
+  zip_path: ""
+  latest_commit: ""
+  workflow_run: ""
+notes: []
