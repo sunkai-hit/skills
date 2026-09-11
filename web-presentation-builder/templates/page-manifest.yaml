@@ -1,0 +1,13 @@
+screens:
+  - id: "01"
+    title: ""
+    status: draft
+    locked: false
+    key_screen: true
+    source_notes: []
+    asset_refs: []
+    interactions: []
+    qa:
+      overflow: unknown
+      readability: unknown
+      assets: unknown
