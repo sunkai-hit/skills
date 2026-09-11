@@ -1,0 +1,36 @@
+version: 1
+project_name: "Minimal Web Presentation Example"
+release_version: "V0.1"
+source_dir: "."
+release_dir: "release/v0.1"
+qa_dir: "qa"
+entry_html: "index.html"
+viewport:
+  width: 1920
+  height: 1080
+screen:
+  selector: ".screen"
+  id_attribute: "data-screen"
+  expected_count: 3
+  ignore_overflow_selectors:
+    - ".decorative-bleed"
+assets:
+  min_width: 100
+  min_height: 100
+  min_bytes: 100
+standalone:
+  filename: "Minimal_Web_Presentation_V0.1_Standalone.html"
+  inline_local_images: true
+render:
+  hash_navigation: true
+  hash_format: "{screen:02d}"
+  virtual_time_budget_ms: 1200
+contact_sheet:
+  columns: 3
+  thumb_width: 348
+  thumb_height: 196
+  gap: 12
+qa:
+  min_critical_font_px: 15
+release:
+  zip_filename: "Minimal_Web_Presentation_V0.1.zip"
