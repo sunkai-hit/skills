@@ -1,0 +1,41 @@
+version: 1
+project_name: "Web Presentation"
+release_version: "V0.1"
+source_dir: "prototype/full-v0.1"
+release_dir: "release/v0.1"
+qa_dir: "qa"
+entry_html: "index.html"
+viewport:
+  width: 1920
+  height: 1080
+screen:
+  selector: ".screen"
+  id_attribute: "data-screen"
+  expected_count: 20
+  ignore_overflow_selectors:
+    - ".decorative-bleed"
+assets:
+  image_globs:
+    - "assets/**/*.{png,jpg,jpeg,webp,gif}"
+  min_width: 320
+  min_height: 180
+  min_bytes: 1024
+standalone:
+  filename: "Web_Presentation_V0.1_Standalone.html"
+  inline_local_images: true
+  image_preferred_format: "png"
+render:
+  hash_navigation: true
+  hash_format: "{screen:02d}"
+  virtual_time_budget_ms: 1800
+contact_sheet:
+  columns: 5
+  thumb_width: 348
+  thumb_height: 196
+  gap: 12
+release:
+  zip_filename: "Web_Presentation_V0.1.zip"
+  include:
+    - standalone
+    - README.md
+    - HTML-SHA256.txt
